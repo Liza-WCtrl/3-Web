@@ -1,0 +1,247 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*gereksiz ayarları kaldırır*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*sitede metnin büyüklüğü ayarları*/
+html{
+	font-size: 10px;
+}
+
+/*body bölümün ayarları*/
+body{
+	font-family: 'Playfair Display', serif;
+	font-weight: 400;
+	font-size: 1.4rem;
+	background-color: #1E0000;
+	line-height: 1.5;
+	text-align: center;
+}
+
+/*sayfadaki resimlerin ayarları*/
+img{
+	width: 100%;
+	height: auto;
+	border-radius: 0.5rem;
+}
+
+/*main etiketin, başlıkların, yazıların ve paragrafların ayarları*/
+h1,h2{
+	font-weight: 700;
+	font-family: 'Playfair Display', serif;
+	color: #1693A7;
+}
+h3{
+	font-weight: 900;
+	font-family: 'Playfair Display', serif;
+	color: #050315;
+}
+h4{
+	font-weight: 900;
+	font-family: 'Playfair Display', serif;
+	color: white;
+}
+p{
+	font-size: 2rem 0;
+	color: #050315;
+	font-family: 'Josefin Sans', sans-serif;
+}
+u{
+	color: #AB0002;
+}
+.baslik{
+	width: 100%;
+	height: 4.7rem;
+}
+a{
+	text-decoration: none;
+}
+main{
+	background-color: #5D5B5B;
+	padding: 0.5rem;
+}
+main h1{
+	color: #1E0000;
+	font-size: 3.6rem
+}
+
+/*nav etiketin ayarları*/
+nav{
+	width: 100%;
+	background-color: #1E0000;
+	padding-top: 1.4rem;
+	padding-bottoom: 1.4rem;
+	position: fixed;
+	z-index: 2;
+	opacity: 0.7;
+}
+nav .container{
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 4rem;
+	padding-right: 4rem;
+}
+		/*standart kod- sorunları gideriyor*/
+.clearfix:after{
+	content:"";
+	display: block;
+	clear: both;
+}
+#logo-box{
+	float: left;
+}
+#logo-box .logo{
+	color: #B40000;
+	font-weight: 700;
+	font-size: 3.2rem;
+	transition: color 2s;
+}
+#logo-box .logo:hover{
+	color: #1715E9;
+}
+#nav-links{
+	float: right;
+}
+#nav-links .nav-item{
+	display: inline-block;
+	margin: 0.4rem;
+}
+#nav-links .nav-link{
+	color: #B40000;
+	font-size: 1.8rem;
+	font-weight: 700;
+	padding: 1rem;
+	letter-spacing: 0.1rem;
+	transition: color 2s;
+}
+#nav-links .nav-link:hover{
+	color: #2DA5A7;
+}
+
+/*header etiketin ayarları*/
+header{
+	height: 40rem;
+}
+header .bg-image{
+	background-image: url("img/kizil meydan.jpg");
+	height: 40rem;
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+	opacity: 0.8;     			/*elemanın saydamlığını belirler*/
+	position: absolute;  			/*elemanın sayfa içerisindeki konumunu belirler*/
+	z-index: -2; 				/*z koordinatlarda position uygulanan etiket*/
+}
+header h1{
+	font-size: 4rem;
+	padding: 17rem;
+	padding-bottom: 0;
+	color: #9F0002;
+		}
+header h2{
+	font-size: 3.5rem;
+	color: white;
+}
+
+/*section etiketin ayarları*/
+.cerceve{
+	width: 100%;
+	padding: 1.1rem;
+}
+.metincerceve{
+	background-color: #3F3F3F;
+	padding: 1.5rem;
+}
+		/*sec-res-tan (section-resim-tanıtım) bölümü*/
+#sec-res-tan{
+	padding: 2rem;
+}
+#sec-res-tan ul{
+	list-style: none;
+}
+#sec-res-tan li{
+	background-color: #3F3F3F;
+	margin-bottom: 1.2rem;
+}
+		/*sec-galeri (section-galeri) bölümü*/
+#sec-galeri{
+	padding: 5rem;
+}
+#sec-galeri ul{
+	list-style: none;
+}
+#sec-galeri li{
+	background-color: #3F3F3F;
+	margin-bottom: 1.2rem;
+}
+#galeri{
+	position: relative;
+}
+#galeri img{
+	display: block;			
+}
+
+/*footer etiketin ayarları*/
+footer{
+	background-color: #020047;
+	padding: 0.5rem;
+	color: white;
+}
+table{
+	bgcolor: #020047;
+	margin-left: auto;
+	margin-right: auto;
+}
+.table-text{
+	font-size: 2.4rem;
+}
+i{
+	color: white;
+	font-size: 4rem; 
+	margin: 3rem; 
+	transition: color 0.6s,font-size 0.6s;
+}
+.i-facebook:hover{color: #01009C; font-size: 3.5rem;}
+.i-twitter:hover{color: #1F66C5; font-size: 3.5rem;}
+.i-youtube:hover{color: #C50003; font-size: 3.5rem;}
+.i-instagram:hover{color: #88138F; font-size: 3.5rem;}
+.i-discord:hover{color: #0D0082; font-size: 3.5rem;}
+
+/*başka cihazlarda dış görünüşü ayarlar*/
+@media screen and (min-width:600px)
+{
+	#sec-res-tan li{
+		width: 40%;
+		margin: 1%;
+		display: inline-block;
+	}
+	#sec-galeri li{
+		width: 30%;
+		margin: 1%;
+		display: inline-block;
+	}
+}
+@media screen and (max-width:500px)
+{
+	body{
+		background-color: #000017;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
